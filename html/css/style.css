@@ -1,0 +1,337 @@
+/** DEFINE CONSTANT HERE
+ *  header background dark color: #323232;
+ *  menu link active/hover color: #2eb398;
+ *  sep line color: #e4e9eb;
+ *  sep line color 2: #219d84;
+ *  brand green light: #ddd2c5;
+ *  brand green dark: #8b8784;
+ */
+
+
+/**
+ *  Font settings
+ */
+li {
+  font-family: 'Trebuchet MS', Arial, serif;
+}
+
+
+/**
+ *  Header styles
+ */
+header {
+  position: relative;
+}
+
+nav {
+  height: 63px;
+  background-color: #323232;
+}
+
+  nav .menu {
+    box-sizing: border-box;
+    height: 63px;
+    line-height: 63px; 
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+    nav .menu.left {
+      position: relative;
+      right: -10px;
+    }
+    nav .menu.right {
+      position: relative;
+      left: -10px;
+    }
+    nav .menu li {
+      display: inline-block;
+    }
+    nav .menu.left li {
+      float: right;
+      margin-left: 25px;
+    }
+    nav .menu.right li {
+      float: left;
+      margin-right: 25px;
+    }
+    nav .menu li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 11pt;
+      color: white;
+    }
+    nav .menu li:hover a, nav .menu li.active a{
+      color: #2eb398;
+    }
+
+  .logow {
+    height: 63px;
+    line-height: 63px;
+    text-align: center;
+  }
+    /* logo img tag */
+    .logow img { 
+      display: inline;
+      vertical-align: bottom;
+    }
+
+nav:after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  margin-left: -45px;
+  height: 0;
+  widows: 0;
+  display: block;
+  border-top: 26px solid #323232;
+  border-bottom: 26px solid transparent;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+}
+
+/**
+ *  pf - portfolio
+ */
+.pf-wrapper {
+  padding-top: 78px;
+}
+
+/* feature image list */
+div[class*="lift-up"] { position: relative; }
+div.lift-up {  top: -30px; }
+div.lift-up-2 {  top: -60px; }
+.fimg {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.fimg.even {
+  left: -20px;
+  width: 980px;
+}
+  .fimg li {
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+  }
+  .fimg.odd li:nth-child(4), .fimg.even li:nth-child(5)  {
+    margin-right: 0;
+  }
+  .fimg.odd li:nth-child(1):before {
+    content: '';
+    position: absolute;
+    left: -21px;
+    top: 51px;
+    height: 104px;
+    width: 1px;
+    background-color: #e4e9eb;
+  }
+  .fimg.odd li:nth-child(4):after {
+    content: '';
+    position: absolute;
+    right: -21px;
+    top: 51px;
+    height: 104px;
+    width: 1px;
+    background-color: #e4e9eb;
+  }
+
+
+/**
+ *  main content switcher
+ */
+.switcher {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+  .switcher li {
+    float: left;
+    margin-right: 3px;
+  }
+    .switcher li a {
+      display: block;
+      width: 6px;
+      height: 6px;
+      text-decoration: none;
+      background-color: #ddd2c5;
+    }
+    .switcher li.active a {
+      background-color: #8b8784;
+    }
+
+/**
+ *  ab - about
+ */
+.ab-wrapper {
+  background-color: #2eb398;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+  .ab-wrapper .avatar {
+    margin-top: 55px;
+  }
+.ab {
+  margin-left: -20px;
+  margin-top: 46px;
+}
+  .ab .title, .ab .subtitle {
+    font-family: 'Maven Pro', Arial, serif;
+    font-weight: normal;
+    color: #20816d;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .ab .title {
+    font-size: 30pt;
+    color: #d7fcf5;
+  }
+  .ab p {
+    line-height: 21.56pt;
+    color: #d7fcf5;
+    font-family: 'Lato', Arial, serif;
+    text-align:justify;
+    text-justify:inter-word;
+  }
+
+.dv {
+  height: 316px;
+  width: 1px;
+  background-color: #219d84;
+}
+.dv.right {
+  float: right;
+}
+
+/**
+ *  Social network icon links
+ */
+.soc .soc-list {
+  list-style-type: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+  .soc-list li {
+    float: left;
+  }
+    .soc-list li a {
+      float: left;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: url(../img/social.gif);
+    }
+    .soc-list li a:hover {
+      background: url(../img/social-active.gif);
+    }
+    .soc-list li:nth-child(2) a { background-position: 24px 0px; }
+    .soc-list li:nth-child(3) a { background-position: 49px 0px; }
+    .soc-list li:nth-child(4) a { background-position: 74px 0px; }
+    .soc-list li:nth-child(5) a { background-position: 98px 0px; }
+    .soc-list li:nth-child(6) a { background-position: 122px 0px; }
+
+
+/** 
+ *  git - Get in touch
+ */
+.git-wrapper {
+  background-color: #323232;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: #d7fcf5;
+}
+  .git-wrapper .amt {
+    margin-top: 53px;
+  }
+  .git-wrapper .amb {
+    margin-bottom: 53px;
+  }
+.git .title, .git .subtitle {
+  font-family: 'Maven Pro', Arial, serif;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.git .title {
+  font-size: 30pt;
+}
+.git form input, .git form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  box-sizing: border-box;
+  padding: 13px 15px 13px 15px;
+  border: none;
+  background: none;
+  background-color: #454545;
+  resize: none; /*for textarea*/
+}
+.git form input:focus, .git form textarea:focus {
+  outline: none;
+}
+.git form button {
+  border: none;
+  background: none;
+  margin-top: 16px;
+  float: right;
+  background-color: #2eb398;
+  height: 37px;
+  line-height: 37px;
+  width: 90px;
+  opacity: 0.9;
+  -webkit-transition: all .25s ease;
+     -moz-transition: all .25s ease;
+      -ms-transition: all .25s ease;
+       -o-transition: all .25s ease;
+          transition: all .25s ease;
+}
+.git form button:hover {
+  opacity: 1;
+}
+.git aside {
+}
+  .git aside p {
+    font-family: 'Lato', Arial, serif;
+    font-size: 12pt;
+    line-height: 21.56pt;
+    margin-top: 4.78pt;
+  }
+  .git aside p strong {
+    font-weight: 700;
+  }
+
+/**
+ *  footer
+ */
+footer {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  background-color: #222222;
+  color: #454545;
+  font-size: 12pt;
+}
+
+/**
+ *  Seperate line 
+ */
+.sep {
+  height: 1px;
+  width: 100%;
+  background-color: #e4e9eb;
+}
+.sep.amb {
+  /* add margin bottom */
+  margin-bottom: 10px;
+}
+.sep.dark {
+  background-color: #2b2b2b;
+}
+.sep.amt {
+  /* add margin top */
+  margin-top: 11px;
+}
